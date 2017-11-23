@@ -7,8 +7,8 @@ class example10Prime{
 
 			for(i = 2; i < 100; i++ ){
 
-				isPrime = ((i%2 != 0) & (i%3 != 0 & i != 3) & (i%5 != 0 & i != 5))? true:
-				 (i == 3 | i == 5)? true: false;
+				isPrime = ((i%2 != 0) & (i%3 != 0 & i != 3) & (i%5 != 0 & i != 5 ) & (i % 7 != 0 & i != 7) )? true:
+				 (i == 3 | i == 5 | i == 7)? true: false;
 
 					 if(isPrime)
 						System.out.println(i + " - простое число;");
