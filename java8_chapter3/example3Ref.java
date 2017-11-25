@@ -15,7 +15,7 @@ class example3Ref{
 			if(p) 
 				System.out.println("Оператор if: \n \n \t if(условие) оператор \n \t else оператор \n");
 			else
-				System.out.println("Оператор switch: \n \n \t shitch(выражение) \n \t case константа \n \t последовательность операторов \n \t break \n  \t //... \n } \n");
+				System.out.println("Оператор switch: \n \n \t switch(выражение) \n \t case константа \n \t последовательность операторов \n \t break \n  \t //... \n } \n");
 
 
 
