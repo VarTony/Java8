@@ -3,6 +3,16 @@ class Vehicle{
 	int fuelcap; // емкость топливного бака;
 	int mpg; // потребность топлива в милях на галлон;
 
+	Vehicle(int p, int f, int m){
+
+	passengers = p;
+    fuelcap = f;
+    mpg = m;
+
+	}
+
+
+
 	double fuelneeded(int miles){
 		return (double) miles / mpg;
 	}
@@ -18,26 +28,15 @@ class Vehicle{
 }
 
 
-class TwoVehicle3{
+class TwoVehicle4Constructor{
 	public static void main(String args[])
 					throws java.io.IOException{
 		
-		Vehicle minivan = new Vehicle();
-		Vehicle sportcar = new Vehicle();
+		Vehicle minivan = new Vehicle(7,16,21);
+		Vehicle sportcar = new Vehicle(2,14,12);
 		double gallons;
 		System.out.print("Введите колличество миль: ");
-		int dist = (int) System.in.read();
-
-		minivan.passengers = 7;
-		minivan.fuelcap = 16;
-		minivan.mpg = 21;
-		minivan.range();
-		
-
-		sportcar.passengers = 2;
-		sportcar.fuelcap = 14;
-		sportcar.mpg = 12;
-		sportcar.range();
+		char dist = (char) System.in.read();
 
 		gallons = (double) minivan.fuelneeded(dist);
 		System.out.println("Минифургону для преодаления расстояния в " + dist + " миль, потребуется " + minivan.liters(gallons) + " литров топлива.");
