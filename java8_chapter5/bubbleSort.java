@@ -30,7 +30,7 @@ class bubbleSort{
 
 
 		}
-		System.out.print("\n \n Отсортированный массив:");
+		System.out.print("\n\nОтсортированный массив:");
 		for(int i = 0; i < 10; i++)
 			System.out.print(" " + nums[i]);
 				System.out.println();
